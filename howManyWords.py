@@ -8,7 +8,7 @@ letters = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 i = 1
 for word in dictionary:
-    if len(word) = i:
+    if len(word) == i:
         letters[i-1] = (letters[i-1] + 1)
 w = 0
 for item in letters:
