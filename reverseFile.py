@@ -8,7 +8,8 @@ file = open(fileName)
 
 fileLines = []
 for line in file:
-    fileLines.append(line)
+    fileLines.append(line.strip())
 
 fileLines.reverse()
-print(fileLines)
+for item in fileLines:
+    print(item)
