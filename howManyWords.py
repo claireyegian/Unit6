@@ -10,6 +10,7 @@ i = 1
 for word in dictionary:
     if len(word) = i:
         letters[i-1] = (letters[i-1] + 1)
-
-for i in (0,9):
-    
+w = 0
+for item in letters:
+    print('There are',letters[w],letters[w],'letter words')
+    w += 1
