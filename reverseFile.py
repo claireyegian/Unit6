@@ -2,7 +2,13 @@
 #12/7/17
 #reverseFile.py - asks for name of file and prints all lines of file in reverse
 
-dictionary = open('engmix.txt')
+fileName = input('Enter a file name: ')
 
-dictionary.reverse()
-print(dictionary)
+file = open(fileName)
+
+fileLines = []
+for line in file:
+    fileLines.append(line)
+
+fileLines.reverse()
+print(fileLines)
