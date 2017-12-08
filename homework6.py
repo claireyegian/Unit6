@@ -33,3 +33,11 @@ for item in fileLines:
     print(item+'!')"""
 
 
+letter = input('Enter a letter: ')
+greatestLetter = ''
+greatestNumber = 0
+for word in dictionary:
+    if letter in word:
+        if word.count(letter)>greatestNumber:
+            greatestLetter = word
+            greatestNumber = word.count(letter)
