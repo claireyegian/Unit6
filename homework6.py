@@ -11,6 +11,7 @@ if x!='':
 else:
     print('Your word is not in the dictionary')"""
 
+
 """wordList = []
 for word in dictionary:
     wordList.append(word)
@@ -18,7 +19,8 @@ for word in dictionary:
 num = int(input('Enter a number: '))
 print(wordList[num-1])"""
 
-fileName = input('Enter a file name: ')
+
+"""fileName = input('Enter a file name: ')
 
 file = open(fileName)
 
@@ -28,4 +30,6 @@ for line in file:
 
 fileLines.reverse()
 for item in fileLines:
-    print(item+'!')
+    print(item+'!')"""
+
+
