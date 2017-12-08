@@ -6,4 +6,7 @@ for word in dictionary:
     word = word.strip()
     if word==word2:
         x = word
-print(x)
+if x!='':
+    print('Your word is in the dictionary')
+else:
+    print('Your word is not in the dictionary')
