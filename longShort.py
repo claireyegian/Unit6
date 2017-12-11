@@ -9,25 +9,29 @@ alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q',
 longest =['']*26
 shortest = ['']*26
 alphabetNum = 0
+dictionaryList = []
 for word in dictionary:
     word = word.strip()
     if word != '':
-        letter = alphabet[alphabetNum]
-        letterList = []
-        while word[0] == letter:
-            letterList.append(word)
-            longestWord = 0
-            longestword = ''
-            for line in letterList:
-                if len(line)>=longestWord:
-                    longestWord = len(line)
-                    longestword = line
-                longest[alphabetNum] = longestword
-            shortestWord = longestWord
-            shortestword = ''
-            for line in letterList:
-                if len(line)<=shortestWord:
-                    shortestWord = len(line)
-                    shortestword = line
-                shortest[alphabetNum] = line
-        alphabetNum = alphabetNum + 1
+        dictionaryList.append(word)
+dictionaryList.sort
+
+letter = alphabet[alphabetNum]
+letterList = []
+while word[0] == letter:
+    letterList.append(word)
+    longestWord = 0
+    longestword = ''
+    for line in letterList:
+        if len(line)>=longestWord:
+            longestWord = len(line)
+            longestword = line
+        longest[alphabetNum] = longestword
+    shortestWord = longestWord
+    shortestword = ''
+    for line in letterList:
+        if len(line)<=shortestWord:
+            shortestWord = len(line)
+            shortestword = line
+        shortest[alphabetNum] = line
+alphabetNum = alphabetNum + 1
