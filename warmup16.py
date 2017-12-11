@@ -5,6 +5,7 @@
 dictionary = open('engmix.txt')
 
 for word in dictionary:
-    if word.strip()[0] == 'c':
-        if word.strip()[-1] == 'y':
-            print(word)
+    if word != '':
+        if word.strip()[0] == 'c':
+            if word.strip()[-1] == 'y':
+                print(word)
