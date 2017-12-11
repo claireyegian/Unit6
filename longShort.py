@@ -21,9 +21,13 @@ for word in dictionary:
             for line in letterList:
                 if len(line)>=longestWord.letter:
                     longestWord.letter = len(line)
-                    longestword.letter = word
-            longest[alphabetNum] = longestword.letter
+                    longestword.letter = line
+                longest[alphabetNum] = longestword.letter
             shortestWord.letter = longestWord.letter
             shortestword.letter = ''
             for line in letterList:
-                if len(line)<=
+                if len(line)<=shortestWord.letter:
+                    shortestWord.letter = len(line)
+                    shortestword.letter = line
+                shortest[alphabetNum] = line
+        alphabetNum = alphabetNum + 1
