@@ -20,7 +20,7 @@ num = int(input('Enter a number: '))
 print(wordList[num-1])"""
 
 
-"""fileName = input('Enter a file name: ')
+fileName = input('Enter a file name: ')
 
 file = open(fileName)
 
@@ -30,10 +30,10 @@ for line in file:
 
 fileLines.reverse()
 for item in fileLines:
-    print(item+'!')"""
+    print(item+'!')
 
 
-letter = input('Enter a letter: ')
+"""letter = input('Enter a letter: ')
 greatestLetter = ''
 greatestNumber = 0
 for word in dictionary:
@@ -41,3 +41,4 @@ for word in dictionary:
         if word.count(letter)>greatestNumber:
             greatestLetter = word
             greatestNumber = word.count(letter)
+print(greatestLetter)"""
