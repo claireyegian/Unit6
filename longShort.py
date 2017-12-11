@@ -16,10 +16,10 @@ dictionaryList.sort()
 longest =['']*26
 shortest = ['']*26
 for line in dictionaryList:
-    spot = alphabet.intex(line[0])
+    spot = alphabet.index(line[0])
     longestWord = 0
     longestword = ''
-    if line[0] = alphabet[spot]:
+    if line[0] == alphabet[spot]:
         if len(line)>=longestWord:
             longestWord = len(line)
             longestword = line
