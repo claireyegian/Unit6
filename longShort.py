@@ -16,18 +16,18 @@ for word in dictionary:
         letterList = []
         while word[0] == letter:
             letterList.append(word)
-            longestWord.letter = 0
-            longestword.letter = ''
+            longestWord = 0
+            longestword = ''
             for line in letterList:
-                if len(line)>=longestWord.letter:
-                    longestWord.letter = len(line)
-                    longestword.letter = line
-                longest[alphabetNum] = longestword.letter
-            shortestWord.letter = longestWord.letter
-            shortestword.letter = ''
+                if len(line)>=longestWord:
+                    longestWord = len(line)
+                    longestword = line
+                longest[alphabetNum] = longestword
+            shortestWord = longestWord
+            shortestword = ''
             for line in letterList:
-                if len(line)<=shortestWord.letter:
-                    shortestWord.letter = len(line)
-                    shortestword.letter = line
+                if len(line)<=shortestWord:
+                    shortestWord = len(line)
+                    shortestword = line
                 shortest[alphabetNum] = line
         alphabetNum = alphabetNum + 1
