@@ -11,12 +11,22 @@ for word in dictionary:
     word = word.strip()
     if word != '':
         dictionaryList.append(word)
-dictionaryList.sort
+dictionaryList.sort()
 
 longest =['']*26
 shortest = ['']*26
-alphabetNum = 0
 for line in dictionaryList:
+    spot = alphabet.intex(line[0])
+    longestWord = 0
+    longestword = ''
+    if line[0] = alphabet[spot]:
+        if len(line)>=longestWord:
+            longestWord = len(line)
+            longestword = line
+        longest[spot] = longestword
+print(longest)
+    
+""""
     letter = alphabet[alphabetNum]
     letterList = []
     while line[0] == letter:
@@ -36,3 +46,6 @@ for line in dictionaryList:
             shortestword = wordd
         shortest[alphabetNum] = wordd
     alphabetNum = alphabetNum + 1
+
+print(longest)
+print(shortest)"""
