@@ -6,9 +6,6 @@ dictionary = open('engmix.txt')
 
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
-longest =['']*26
-shortest = ['']*26
-alphabetNum = 0
 dictionaryList = []
 for word in dictionary:
     word = word.strip()
@@ -16,22 +13,26 @@ for word in dictionary:
         dictionaryList.append(word)
 dictionaryList.sort
 
-letter = alphabet[alphabetNum]
-letterList = []
-while word[0] == letter:
-    letterList.append(word)
+longest =['']*26
+shortest = ['']*26
+alphabetNum = 0
+for line in dictionaryList:
+    letter = alphabet[alphabetNum]
+    letterList = []
+    while line[0] == letter:
+        letterList.append(line)
     longestWord = 0
     longestword = ''
-    for line in letterList:
-        if len(line)>=longestWord:
-            longestWord = len(line)
-            longestword = line
+    for item in letterList:
+        if len(item)>=longestWord:
+            longestWord = len(item)
+            longestword = item
         longest[alphabetNum] = longestword
     shortestWord = longestWord
     shortestword = ''
-    for line in letterList:
-        if len(line)<=shortestWord:
-            shortestWord = len(line)
-            shortestword = line
-        shortest[alphabetNum] = line
-alphabetNum = alphabetNum + 1
+    for wordd in letterList:
+        if len(wordd)<=shortestWord:
+            shortestWord = len(wordd)
+            shortestword = wordd
+        shortest[alphabetNum] = wordd
+    alphabetNum = alphabetNum + 1
