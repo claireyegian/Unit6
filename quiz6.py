@@ -49,6 +49,6 @@ for word in dictionary:
         wordList.append(word)
 listLength = len(wordList)
 if listLength%2 == 0:
-    print(wordList[(listLength//2)-1:listLength]
+    print(wordList[(listLength//2)-1:listLength])
 else:
-    print(wordList[(listLength//2)-1]
+    print(wordList[(listLength//2)-1])
