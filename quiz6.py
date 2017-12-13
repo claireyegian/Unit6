@@ -4,6 +4,7 @@
 
 dictionary = open('engmix.txt')
 
+"""
 #Program 1
 list = []
 for word in dictionary:
@@ -11,12 +12,21 @@ for word in dictionary:
         list.append(word)
 for word in list:
     word.strip()
-    print(word)
+    print(word)"""
 
+"""
 #Program 2
 rList = []
 for word in dictionary:
     if word != '':
         if word[0] == 'r':
             rList.append(word)
-print(len(rList))
+print(len(rList))"""
+
+#Program 3
+num = int(input('Enter a number: '))
+for word in dictionary:
+    word = word.strip()
+    if len(word) == num:
+        print(word)
+        break
