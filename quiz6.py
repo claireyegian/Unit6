@@ -8,11 +8,14 @@ dictionary = open('engmix.txt')
 cList = []
 pList = []
 for word in dictionary:
+    word.split()
     if word.count('c') == 3:
         cList.append(word)
     if word.count('p') == 2:
         pList.append(word)
-print(cList,'all have 3 cs')
-print(pList,'all have 2 ps')
+for word in cList:
+    print(word+'has 3 cs')
+for word in pList:
+    print(word+'has 2 ps')
     
 
