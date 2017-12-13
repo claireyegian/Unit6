@@ -23,18 +23,32 @@ for word in dictionary:
             rList.append(word)
 print(len(rList))"""
 
+"""
 #Program 3
 num = int(input('Enter a number: '))
 for word in dictionary:
     word = word.strip()
     if len(word) == num:
         print(word)
-        break
+        break"""
 
+"""
 #Program 4
 letter = input('Enter a letter: ')
 noLetter= []
 for word in dictionary:
     if word.count(letter) == 0:
         noLetter.append(word)
-print(len(noLetter))
+print(len(noLetter))"""
+
+#Program 5
+wordList = []
+for word in dictionary:
+    word = word.strip()
+    if word != '':
+        wordList.append(word)
+listLength = len(wordList)
+if listLength%2 == 0:
+    print(wordList[(listLength//2)-1:listLength]
+else:
+    print(wordList[(listLength//2)-1]
