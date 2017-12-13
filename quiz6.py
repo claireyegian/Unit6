@@ -41,6 +41,7 @@ for word in dictionary:
         noLetter.append(word)
 print(len(noLetter))"""
 
+"""
 #Program 5
 wordList = []
 for word in dictionary:
@@ -51,4 +52,4 @@ listLength = len(wordList)
 if listLength%2 == 0:
     print(wordList[(listLength//2)-1:listLength])
 else:
-    print(wordList[(listLength//2)-1])
+    print(wordList[(listLength//2)-1])"""
