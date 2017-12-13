@@ -30,3 +30,11 @@ for word in dictionary:
     if len(word) == num:
         print(word)
         break
+
+#Program 4
+letter = input('Enter a letter: ')
+noLetter= []
+for word in dictionary:
+    if word.count(letter) == 0:
+        noLetter.append(word)
+print(len(noLetter))
