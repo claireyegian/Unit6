@@ -5,14 +5,14 @@
 dictionary = open('engmix.txt')
 
 #Program 1
-3c = []
-2p = []
+cList = []
+pList = []
 for word in dictionary:
     if word.count('c') == 3:
-        3c.append(word)
-    if word.count('p') == p:
-        2p.append(word)
-print(3c,'all have 3 cs')
-print(2p,'all have 2 ps')
+        cList.append(word)
+    if word.count('p') == 2:
+        pList.append(word)
+print(cList,'all have 3 cs')
+print(pList,'all have 2 ps')
     
 
