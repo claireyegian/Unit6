@@ -12,5 +12,11 @@ for word in dictionary:
 for word in list:
     word.strip()
     print(word)
-    
 
+#Program 2
+rList = []
+for word in dictionary:
+    if word != '':
+        if word[0] == 'r':
+            rList.append(word)
+print(len(rList))
